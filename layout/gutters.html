@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap5 Course 2022</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+  </head>
+
+<!---
+How they work
+Gutters are the gaps between column content, created by horizontal padding. We set padding-right and padding-left on each column, and use negative margin to offset that at the start and end of each row to align content.
+
+Gutters start at 1.5rem (24px) wide. This allows us to match our grid to the padding and margin spacers scale.
+
+Gutters can be responsively adjusted. Use breakpoint-specific gutter classes to modify horizontal gutters, vertical gutters, and all gutters.
+
+
+-->
+
+
+
+
+  <style>
+
+h2{
+    color: black;
+}
+
+h3{
+    color: gray;
+}
+
+h4{
+    color: blue;
+}
+
+
+    .gx-5 {
+      background-color: black;
+    }
+    .gx-4 {
+      background-color: black;
+    }
+
+    .gx-3 {
+      background-color: black;
+    }
+
+    .gx-2 {
+      background-color: black;
+    }
+
+    .gx-1 {
+      background-color: black;
+    }
+
+    .gy-5 {
+      background-color: rgb(187, 187, 187);
+    }
+    .gy-5 {
+      background-color: rgb(187, 187, 187);
+    }
+    .gy-4 {
+      background-color: rgb(187, 187, 187);
+    }
+    .gy-3 {
+      background-color: rgb(187, 187, 187);
+    }
+    .gy-2 {
+      background-color: rgb(187, 187, 187);
+    }
+    .gy-1 {
+      background-color: rgb(187, 187, 187);
+    }
+
+    .g-0 {
+      background-color: blue;
+    }
+
+    .g-1 {
+      background-color: blue;
+    }
+
+    .g-2 {
+      background-color: blue;
+    }
+
+    .g-3 {
+      background-color: blue;
+    }
+
+    .g-4 {
+      background-color: blue;
+    }
+
+    .g-5 {
+      background-color: blue;
+    }
+  </style>
+
+  <body>
+    <!--Horizontal gutters -->
+
+    <div class="container px-4">
+      <div class="row gx-5">
+        <div class="col">
+          <div class="p-3 border bg-light">Custom column padding</div>
+        </div>
+        <div class="col">
+          <div class="p-3 border bg-light">Custom column padding</div>
+        </div>
+      </div>
+    </div>
+
+    <!--An alternative solution is to add a wrapper around the .row with the .overflow-hidden class:-->
+    <div class="container overflow-hidden">
+      <div class="row gx-5">
+        <div class="col">
+          <div class="p-3 border bg-light">Custom column padding</div>
+        </div>
+        <div class="col">
+          <div class="p-3 border bg-light">Custom column padding</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Vertical Gutters -->
+    <div class="container overflow-hidden">
+      <div class="row gy-5">
+        <div class="col-6">
+          <div class="p-3 border bg-light">Custom column padding</div>
+        </div>
+        <div class="col-6">
+          <div class="p-3 border bg-light">Custom column padding</div>
+        </div>
+        <div class="col-6">
+          <div class="p-3 border bg-light">Custom column padding</div>
+        </div>
+        <div class="col-6">
+          <div class="p-3 border bg-light">Custom column padding</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Horizontal and vertical gutters-->
+
+    <div class="container">
+      <div class="row g-3">
+        <div class="col-6">
+          <div class="p-3 border bg-light">Custom column padding</div>
+        </div>
+        <div class="col-6">
+          <div class="p-3 border bg-light">Custom column padding</div>
+        </div>
+        <div class="col-6">
+          <div class="p-3 border bg-light">Custom column padding</div>
+        </div>
+        <div class="col-6">
+          <div class="p-3 border bg-light">Custom column padding</div>
+        </div>
+      </div>
+    </div>
+
+    <!--- Row columns gutters -->
+
+    <div class="container">
+      <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
+        <div class="col">
+          <div class="p-3 border bg-light">Row column</div>
+        </div>
+        <div class="col">
+          <div class="p-3 border bg-light">Row column</div>
+        </div>
+        <div class="col">
+          <div class="p-3 border bg-light">Row column</div>
+        </div>
+        <div class="col">
+          <div class="p-3 border bg-light">Row column</div>
+        </div>
+        <div class="col">
+          <div class="p-3 border bg-light">Row column</div>
+        </div>
+        <div class="col">
+          <div class="p-3 border bg-light">Row column</div>
+        </div>
+        <div class="col">
+          <div class="p-3 border bg-light">Row column</div>
+        </div>
+        <div class="col">
+          <div class="p-3 border bg-light">Row column</div>
+        </div>
+        <div class="col">
+          <div class="p-3 border bg-light">Row column</div>
+        </div>
+        <div class="col">
+          <div class="p-3 border bg-light">Row column</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- No gutters -->
+    <div class="row g-0">
+      <div class="col-sm-6 col-md-8">.col-sm-6 .col-md-8</div>
+      <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+    </div>
+
+    <h1>Gutters</h1>
+    <h2> gx is in black</h2>
+    <h3> gy is in gray</h3>
+    <h4>  g-0 is in blue </h4>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
+
+<!---
+    //Useful links
+https://getbootstrap.com/docs/5.2/layout/gutters/
+
+-->
