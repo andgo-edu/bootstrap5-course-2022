@@ -1,3 +1,7 @@
+## BootStrap 5.2 Crash Course
+
+
+
 # Table of Contents 
 
 ## Layout
@@ -11,4 +15,12 @@ Utilities
 Z-index
 CSS Grid
 
+
+
+### Content 
+
+Typography[x]
+Images []
+Tables []
+Figures []
 
